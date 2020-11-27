@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "author":"Mart Gil Robles",
+  "name": "SubdomainFinder C99",
+  "description": "Get subdomain in private mode for parse",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://subdomainfinder.c99.nl/*"],
+      "js": ["index.js"]
+    }
+  ]
+}
